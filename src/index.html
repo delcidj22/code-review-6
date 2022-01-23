@@ -1,9 +1,57 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title></title>
+  <title>Currency Echange</title>
 </head>
 <body>
+  <div class="container">
+    <h1>Currency Exchange Rates</h1>
+    <br>
+    <form id="currencyExchange">
+      <label for="amount">Please Enter how much you would like to exchange: $</label>
+      <input id="amount" min="0" type="number" placeholder="USD" required>
+
+      <br>
+      <br>
+
+
+      <label for="countrySelection">Please Select a Country you would like to exchange to:</label>
+      <div class="col-sm-4">
+        <select class="countryOptions">
+          <option value="USD">United States</option>
+          <option value="AED">United Arab Emirates</option>
+          <option value="AFN">Afghanistan</option>
+          <option value="ALL">Albania</option>
+          <option value="AMD">Armenia</option>
+          <option value="BDT">Bangladesh</option>
+          <option value="BZD">Belize</option>
+          <option value="CAD">Canada</option>
+          <option value="CLP">Chile</option>
+          <option value="CNY">China</option>
+          <option value="ETB">Ethiopia</option>
+          <option value="FJD">Fiji</option>
+          <option value="GHS">Ghania</option>
+          <option value="INR">India</option>
+          <option value="MXN">Mexico</option>
+          <option value="PEN">Peru</option>
+          <option value="KRW">South Korea</option>
+          <option value="LBP">Lebanon</option>
+          <option value="NZD">New Zeland</option>
+          <option value="PYG">Paraguay</option>
+          <option value="ZAR">South Africa</option>
+          <option value="VES">Venezuela</option>
+          <option value="VND">Vietnam</option>
+        </select>
+      </div>
+      <br>
+      <button class="submit" id="currencyConverter">Convert Currency</button> 
+    </form>
+
+    <div class="showErrors"></div>
+    <div class="showCurrencyExchange"></div>
+    <div class="showConversion"></div>
+
+  </div>
   
 </body>
 </html>
